@@ -37,5 +37,5 @@ Minimal Viable Outcome:
   2. Highscore is now trackable
 
 - Week 3 (Final)
-  1. Goal 1
-  2. Goal 2
+  1. Background Music
+  2. Fast Fall for Tetris Pieces
