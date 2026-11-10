@@ -1,4 +1,4 @@
-# Title
+# PFDA Final Proposal: Tetris Gameplay Loop
 
 ## Repository
 <https://github.com/JawshIsDeD/PFDA_Final_Project.git>
@@ -33,8 +33,8 @@ Minimal Viable Outcome:
   2. There is a lose state
 
 - Week 2
-  1. Goal 1
-  2. Goal 2
+  1. Pause and play implemented
+  2. Highscore is now trackable
 
 - Week 3 (Final)
   1. Goal 1
