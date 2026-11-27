@@ -2,13 +2,26 @@ import pygame
 
 pygame.init()
 
-SCREEN_Length = 600
-SCREEN_Width = 600
+Cell_size = 30
+Rows = 20
+Columns = 10
+SCREEN_Width = Cell_size * Rows
+SCREEN_Length = Cell_size * Columns
+
 screen = pygame.display.set_mode((SCREEN_Length, SCREEN_Width))
 pygame.display.set_caption("Tetris")
 
 clock = pygame.time.Clock()
 FPS = 60
+
+Background = (50, 50, 50) #black
+grid_color = (0, 0, 0) #grey
+
+def draw_grid():
+    for y in range(Rows):
+        for x in range(Columns):
+            pygame.draw.rect(screen, grid_color, (x * Cell_size, y * Cell_size, Cell_size, Cell_size))
+            pygame.draw.rect(screen, Background, (x * Cell_size, y * Cell_size, Cell_size, Cell_size), 1)
 
 running = True
 while running:
@@ -16,7 +29,8 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    screen.fill((0, 0, 0))
+    screen.fill(Background)
+    draw_grid()
     pygame.display.update()
     clock.tick(FPS)
 
